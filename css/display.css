@@ -1,0 +1,74 @@
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+}
+div.info {
+	position: absolute;
+	top: 2em;
+	left: 2em;
+	font-family: 'Courier',sans-serif;
+	font-size: 0.7em;
+	color: #ffff00;
+	opacity: 1;
+}
+
+div.info2 {
+	position: absolute;
+	bottom: 2em;
+	left: 2em;
+	font-family: 'Courier',sans-serif;
+	font-size: 0.7em;
+	color: #ffaa77;
+	opacity: 1;
+}
+
+div.info table,
+div.info2 table {
+	color: #ffff88;
+	border-collapse: collapse;
+	font-size: 1em;
+}
+
+div.info table th,
+div.info table td,
+div.info2 table th,
+div.info2 table td {
+	text-align: left;
+	vertical-align: top;
+}
+
+div.info table td,
+div.info2 table td {
+	padding-top: .05em;
+}
+
+strong {
+	color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+}
+
+a:hover {
+	color: #ffff88;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.red {
+	color: #ffffff;
+}
+
+.big {
+	background-color: #aa0000;
+}

@@ -1,0 +1,319 @@
+<html>
+	<head>
+		<title>Robert Rajs - Energonon 3D</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="css/display.css" type="text/css" media="screen">
+	</head>
+	<body>
+		<div class="info">
+			<h1>Energon</h1>
+			<table>
+				<tr>
+					<td>
+						<table style="margin: 0; padding: 0;" cellpadding="0" cellspacing="0">
+							<tr>
+								<td style="width: 28em;">Hmotnost nejlehčího objektu</td>
+								<td style="width: 15em;" class="bold white" id="info_nejlehci_objekt"></td>
+							</tr>
+							<tr>
+								<td>Hmotnost nejtěžšího objektu</td>
+								<td class="bold white" id="info_nejtezsi_objekt"></td>
+							</tr>
+							<tr>
+								<td>Transpozice černé díry (půltóny)</td>
+								<td class="bold white" id="info_transpozice_cd"></td>
+							</tr>
+							<tr>
+								<td>bit clip absolutní</td>
+								<td class="bold white" id="info_bit_clip"></td>
+							</tr>
+							<tr>
+								<td style="text-align: right; padding-right: 1em;" colspan="2" class="bold white" id="info_bit_clip_bin"></td>
+							</tr>
+							<tr>
+								<td>bit clip momentální</td>
+								<td class="bold white" id="info_bit_clip_rep"></td>
+							</tr>
+							<tr>
+								<td style="text-align: right; padding-right: 1em;" colspan="2" class="bold white" id="info_bit_clip_rep_bin"></td>
+							</tr>
+							<tr>
+								<td>Benchmark CPU/JS - stav</td>
+								<td class="bold white" id="info_bench_stav"></td>
+							</tr>
+							<tr>
+								<td>Benchmark CPU/JS - hodnocení testu</td>
+								<td class="bold white" id="info_bench_vysledek"></td>
+							</tr>
+							<tr>
+								<td>Benchmark CPU/JS - průběh testování</td>
+								<td class="bold white" id="info_bench_presnost"></td>
+							</tr>
+							<tr>
+								<td>Transpozice hmotnostního rozpětí (půltóny)</td>
+								<td class="bold white" id="info_transpozice_tihy"></td>
+							</tr>
+							<tr>
+								<td>PAUZA</td>
+								<td class="bold white" id="info_pauza"></td>
+							</tr>
+							<tr>
+								<td>Násobek přitažlivosti objektů</td>
+								<td class="bold white" id="info_npo"></td>
+							</tr>
+							<tr>
+								<td>Aktivní gravitační engine</td>
+								<td class="bold white" id="info_engine"></td>
+							</tr>
+							<tr>
+								<td>Audio - dynamický násobek (1bit)</td>
+								<td class="bold white" id="info_dynamicky_nasobek"></td>
+							</tr>
+							<tr>
+								<td>Automatické centrování</td>
+								<td class="bold white" id="info_centrovani"></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table style="margin: 0; padding: 0;" cellpadding="0" cellspacing="0">
+							<tr>
+								<td style="width: 28em;">Pozice černé díry</td>
+								<td style="width: 15em;" class="bold white" id="info_cerna_dira"></td>
+							</tr>
+							<tr>
+								<td>Režim černé díry</td>
+								<td class="bold white" id="info_cd_rezim"></td>
+							</tr>
+							<tr>
+								<td>Pozice umístění průzoru</td>
+								<td class="bold white" id="info_pruzor"></td>
+							</tr>
+							<tr>
+								<td>Skokový násobek zrychlení objektů</td>
+								<td class="bold white" id="info_g_koeficient"></td>
+							</tr>
+							<tr>
+								<td>Realistický násobek zrychlení objektů</td>
+								<td class="bold white" id="info_anim_rychlost"></td>
+							</tr>
+							<tr>
+								<td>Hmotnost černé díry</td>
+								<td class="bold white" id="info_cd_hmotnost"></td>
+							</tr>
+							<tr>
+								<td>Periodický nárůst hmotnosti černé díry</td>
+								<td class="bold white" id="info_cd_pernar"></td>
+							</tr>
+							<tr>
+								<td>Režim přitažlivosti objektů</td>
+								<td class="bold white" id="info_obj_rezim"></td>
+							</tr>
+							<tr>
+								<td>Velikost neviditelné místnosti</td>
+								<td class="bold white" id="info_zdi_velikost"></td>
+							</tr>
+							<tr>
+								<td>Režim neviditelné místnosti</td>
+								<td class="bold white" id="info_zdi_rezim"></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table style="margin: 0; padding: 0;" cellpadding="0" cellspacing="0">
+							<tr>
+								<td style="width: 28em;">Průměrná energie vesmíru či látky</td>
+								<td style="width: 15em;" class="bold white" id="info_celkova_energie"></td>
+							</tr>
+							<tr>
+								<td>Kamera relativně k pozici černé díry</td>
+								<td class="bold white" id="info_kamera_relativni_cd"></td>
+							</tr>
+							<tr>
+								<td>Násobek rychlosti kamery</td>
+								<td class="bold white" id="info_kamera_nasobek"></td>
+							</tr>
+							<tr>
+								<td>Úběžník 3D prostoru</td>
+								<td class="bold white" id="info_kamera_perspektiva"></td>
+							</tr>
+							<tr>
+								<td>Kreslení</td>
+								<td class="bold white" id="info_kresleni"></td>
+							</tr>
+							<tr>
+								<td>Malování</td>
+								<td class="bold white" id="info_malovani"></td>
+							</tr>
+							<tr>
+								<td>Viditelnost objektů</td>
+								<td class="bold white" id="info_viditelnost_objektu"></td>
+							</tr>
+							<tr>
+								<td>Zaznamenávání</td>
+								<td class="bold white" id="info_zaznam_stav"></td>
+							</tr>
+							<tr>
+								<td>Velikost záznamu</td>
+								<td class="bold white" id="info_zaznam_kroky"></td>
+							</tr>
+							<tr>
+								<td>Perioda ukládání záznamu</td>
+								<td class="bold white" id="info_zaznam_perioda"></td>
+							</tr>
+							<tr>
+								<td>Zbývající čas do uložení (odhad)</td>
+								<td class="bold white" id="info_zaznam_odhad"></td>
+							</tr>
+							<tr>
+								<td>Čas dosažení periody záznamu (odhad)</td>
+								<td class="bold white" id="info_zaznam_odhad_per_cas"></td>
+							</tr>
+							<tr>
+								<td>Rozlišení záznamu (ovlivní množství dat)</td>
+								<td class="bold white" id="info_zaznam_rozliseni"></td>
+							</tr>
+							<tr>
+								<td>Režim záznamu</td>
+								<td class="bold white" id="info_zaznam_rezim"></td>
+							</tr>
+							<tr>
+								<td>Vykreslování</td>
+								<td class="bold white" id="info_vykreslovani"></td>
+							</tr>
+							<tr>
+								<td>Blokování kláves</td>
+								<td class="bold white" id="info_blokovani_klaves"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="info2">
+			<h1>Ovládání</h1>
+			<!-- <h2>Animaci spusť klávesou <strong>shift</strong></h2> -->
+			<table>
+				<tr>
+					<td style="width: 25em">Posouvání pohledu kamery</td>
+					<td style="width: 18em"><strong>šipky</strong></td>
+					<td style="width: 23em">Polohování kamery</td>
+					<td style="width: 18em"><strong>w|s|a|d|plus|minus</strong></td>
+				</tr>
+				<tr>
+					<td>Násobek rychlosti pohybu kamery</td>
+					<td><strong>7|8</strong></td>
+					<td>Velikost neviditelné místnosti</td>
+					<td><strong>p|l</strong></td>
+				</tr>
+				<tr>
+					<td>Vypnout / zapnout neviditelnou místnost</td>
+					<td><strong>space</strong></td>
+					<td>Zapnout / vypnout černou díru</td>
+					<td><strong>esc</strong></td>
+				</tr>
+				<tr>
+					<td>Transponovat hmotnost černé díry</td>
+					<td><strong>pgup|pgdn|home|end</strong></td>
+					<td>Invertovat přitažlivost černé díry</td>
+					<td><strong>enter</strong></td>
+				</tr>
+				<tr>
+					<td>Změna hloubky perspektivy</td>
+					<td><strong>x|c</strong></td>
+					<td>Skokový násobek zrychlení objektů</td>
+					<td><strong>r|f</strong></td>
+					<td style="width: 26em;">Vymazat timecache</td>
+					<td><strong>delete</strong></td>
+				</tr>
+				<tr>
+					<td>Realistický násobek zrychlení objektů</td>
+					<td><strong>o|k</strong></td>
+					<td>Zabrzdit všechny objekty</td>
+					<td><strong>ctrl</strong></td>
+					<td>Blokování kláves</td>
+					<td><strong>insert</strong></td>
+				</tr>
+				<tr>
+					<td>Invertovat přitažlivosti objektů</td>
+					<td><strong>i</strong></td>
+					<td>Reinicializace programu</td>
+					<td><strong>F5</strong></td>
+					<td>Periodický nárůst hmotnosti černé díry</td>
+					<td><strong>=|´</strong></td>
+				</tr>
+				<tr>
+					<td>Pauza všech objektů</td>
+					<td><strong>shift</strong></td>
+					<td>Zakázat posun černé díry</td>
+					<td><strong>*</strong></td>
+					<td>Zapnout / vypnout automatické centrování</td>
+					<td><strong>;</strong></td>
+				</tr>
+				<tr>
+					<td>Sunout černou díru k výchozí pozici</td>
+					<td><strong>0</strong></td>
+					<td>Vyrovnat natočení kamery</td>
+					<td><strong>1</strong></td>
+					<td>Dynamický násobek pro RAW</td>
+					<td><strong>í|é</strong></td>
+				</tr>
+				<tr>
+					<td>Kamera relativně k pozici černé díry</td>
+					<td><strong>5</strong></td>
+					<td>Vyrovnat pozici kamery</td>
+					<td><strong>2</strong></td>
+					<td>Zvolit gravitační engine</td>
+					<td><strong>á</strong></td>
+				</tr>
+				<tr>
+					<td>Kreslit</td>
+					<td><strong>,</strong></td>
+					<td>Viditelnost objektů</td>
+					<td><strong>3</strong></td>
+					<td>Násobek tíhy objektů</td>
+					<td><strong>č|ř|ž|ý</strong></td>
+				</tr>
+				<tr>
+					<td>Malovat (výpočetně velmi náročné)</td>
+					<td><strong>.</strong></td>			
+					<td style="width: 20em">Vypnout / zapnout texty na obrazovce</td>
+					<td><strong>v</strong></td>
+					<td>bit clip reset</td>
+					<td><strong>š</strong></td>
+				</tr>
+				<tr>
+					<td>Zapnout / vypnout zaznamenávání stavu</td>
+					<td><strong>6</strong></td>
+					<td style="width: 20em">Uložení záznamu</td>
+					<td><strong>4</strong></td>
+					<td>Transpozice hmotnostního rozpětí</td>
+					<td><strong>+|ě</strong></td>
+				</tr>
+				<tr>
+					<td>Rozlišení záznamu</td>
+					<td><strong>b|n</strong></td>
+					<td>Perioda ukládání záznamu</td>
+					<td><strong>h|j</strong></td>
+					<td>Spustit matematický benchmark CPU/JS</td>
+					<td><strong>q</strong></td>
+				</tr>
+				<tr>
+					<td>Režim záznamu</td>
+					<td><strong>u</strong></td>
+					<td>Vypnout / zapnout vykreslování</td>
+					<td><strong>m</strong></td>
+					<td style="width: 24em">Transponovat velikost objektů</td>
+					<td><strong>t|g</strong></td>
+				</tr>
+			</table>
+		</div>
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/three.js"></script>
+		<script src="js/jszip.js"></script>
+		<script src="js/FileSaver.js"></script>
+		<script src="js/jquery.transit.min.js"></script>
+		<script src="jquery-color-master/jquery.color.js"></script>
+		<script src="js/gravitace-elst.js.20140604.js"></script>
+	</body>
+</html>
